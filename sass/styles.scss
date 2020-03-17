@@ -1,0 +1,199 @@
+@import "normalize";
+@font-face {
+  font-family: "Sans Pro";
+  src: url('../fonts/SourceSansPro-Regular.eot');
+  src: url('../fonts/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/SourceSansPro-Regular.woff') format('woff'), url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Sans Pro";
+  src: url('../fonts/SourceSansPro-Bold.eot');
+  src: url('../fonts/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/SourceSansPro-Bold.woff') format('woff'), url('../fonts/SourceSansPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Sans Pro";
+  src: url('../fonts/SourceSansPro-SemiBold.eot');
+  src: url('../fonts/SourceSansPro-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/SourceSansPro-SemiBold.woff') format('woff'), url('../fonts/SourceSansPro-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+%bold-font {
+  font-family: "Sans Pro";
+  font-weight: bold;
+}
+%regular-font {
+  font-family: "Sans Pro";
+  font-weight: normal;
+}
+%semibold-font {
+  font-family: "Sans Pro";
+  font-weight: 600;
+}
+%container {
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+}
+body {
+overflow-x: hidden;
+}
+// main header
+header.main__header {
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: transparent;
+}
+div.main__header-container {
+  @extend %container;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+}
+a.main__header-logo {
+  @extend %bold-font;
+  font-size: 17px;
+  margin-top: 51px;
+  margin-left: 2px;
+  text-decoration: none;
+  color: #212121;
+}
+ul.main__header-nav-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-right: 12px;
+  margin-top: 70px;
+  li {
+    list-style: none;
+    padding-right: 23px;
+    a {
+      @extend %bold-font;
+      font-size: 16px;
+      text-decoration: none;
+      color: #212121;
+    }
+  }
+}
+        
+// banner
+section.banner {
+  display: flex;
+  height: 1000px;
+  margin: 0;
+  background-image: url(../media/banner.jpg);
+  background-position: center;
+  background-size: cover;
+}
+div.banner__container {
+  @extend %container;
+  flex-direction: column;
+  align-self: flex-end;
+  justify-content: center;
+  flex: 1;
+  max-width: 1170px;
+}
+div.banner__promo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  h1 {
+    @extend %bold-font;
+    font-size: 73px;
+    position: relative;
+    margin-top: 268px;
+    margin-bottom: 45px;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 96px;
+      left: 309px;
+      width: 137px;
+      height: 5px;
+      background-color: #212121;
+    }
+  }
+  p {
+    @extend %regular-font;
+    font-size: 18px;
+    max-width: 550px;
+    text-align: right;
+    line-height: 1.9;
+    margin-top: 6px;
+  }
+  a {
+    @extend %semibold-font;
+    font-size: 18px;
+    text-decoration: none;
+    word-spacing: 1px;
+    color: #212121;
+    border: 2px solid #212121;
+    box-sizing: border-box;
+    padding: 13px 89px 13px 81px;
+    margin-top: 36px;
+    &:hover {
+      background-color: rgba(47, 47, 38, 0.4);
+    }
+  }
+}
+
+// intro
+section.intro {
+  @extend %container;
+  max-width: 970px;
+}
+div.intro__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 99px;
+  margin-bottom: 97px;
+  h2 {
+    @extend %bold-font;
+    font-size: 27px;
+    word-spacing: 6px;
+    margin-top: 17px;
+  }
+  p {
+    @extend %regular-font;
+    font-size: 16px;
+    margin-top: 42px;
+    line-height: 2;
+    text-align: center;
+    word-spacing: 2px;
+  }
+}
+
+// services
+section.services {
+  background-color: #efefef;
+}
+div.services__container {
+  @extend %container;
+  max-width: 1170px;
+  justify-content: space-between;
+}
+div.services__block {
+  margin: 80px 48px 92px 58px;
+  h3 {
+    @extend %semibold-font;
+    font-size: 18px;
+    word-spacing: 5px;
+    letter-spacing: 0.8px;
+  }
+  p {
+    max-width: 270px;
+    @extend %regular-font;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 29px;
+    word-spacing: 5px;
+  }
+  img {
+    height: 37px;
+  }
+}
