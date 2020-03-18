@@ -4,3 +4,8 @@ $('.featured-articles__slider').slick({
     autoplay: true,
     autoplaySpeed: 3000,
   });
+  $('.clients__slider').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    variableWidth: true,
+  });

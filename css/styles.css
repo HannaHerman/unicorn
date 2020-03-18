@@ -322,7 +322,7 @@ template {
   src: url("../fonts/SourceSansPro-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-SemiBold.woff") format("woff"), url("../fonts/SourceSansPro-SemiBold.ttf") format("truetype");
   font-weight: 600; }
 
-a.main__header-logo, ul.main__header-nav-list li a, div.banner__promo h1, div.intro__container h2, div.featured-articles__container h2 {
+a.main__header-logo, ul.main__header-nav-list li a, div.banner__promo h1, div.intro__container h2, div.featured-articles__container h2, div.clients__container h2 {
   font-family: "Sans Pro";
   font-weight: bold; }
 
@@ -507,8 +507,9 @@ div.featured-articles__container p {
   margin-top: 10px; }
 
 div.featured-articles__slider {
-  max-width: 1168px;
-  margin: 0 auto; }
+  max-width: 1167px;
+  margin: 0 auto;
+  padding-left: 10px; }
 
 div.featured-articles__slider-block {
   position: relative;
@@ -516,7 +517,7 @@ div.featured-articles__slider-block {
   flex-direction: column;
   max-width: 370px;
   height: 370px;
-  margin: 87px 0 143px;
+  margin: 87px 0 140px;
   background-color: #222222; }
 
 div.featured-articles__slider-block:hover:before {
@@ -561,8 +562,8 @@ div.featured-articles__slider-block figure figcaption {
   margin-left: 14px; }
 
 button.slick-next {
-  right: -30px;
-  top: 43%; }
+  right: -10px;
+  top: 40%; }
 
 button.slick-next:before {
   content: '→';
@@ -570,4 +571,31 @@ button.slick-next:before {
   color: #222222;
   background-color: #222222;
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 47% 100%, 74% 50%, 47% 0);
-  right: -30px; }
+  right: -10px; }
+
+section.clients {
+  background-color: #efefef; }
+
+div.clients__container {
+  margin: 0 auto;
+  max-width: 930px;
+  padding-top: 37px;
+  padding-bottom: 105px; }
+
+div.clients__container h2 {
+  font-size: 27px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 65px; }
+
+div.clients__slider {
+  margin-left: 20px; }
+
+.slick-initialized .slick-slide {
+  width: 160px; }
+
+button.slick-prev {
+  display: none; }
+
+button.slick-prev:before {
+  display: none; }
