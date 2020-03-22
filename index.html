@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unicorn</title>
-    <link rel="stylesheet" href="./css/styles.css"/>
     <link rel="stylesheet" href="./slick/slick.css"/>
     <link rel="stylesheet" href="./slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="shortcut icon" type="image/png" href="./media/favicon.png"/>
 </head>
 <body>
   <header class="main__header">
-    <div class="main__header-container">
+    <div class="container">
       <a class="main__header-logo" href="#home">UNICORN</a>
       <nav class="main__header-nav">
         <ul class="main__header-nav-list">
@@ -18,12 +19,13 @@
           <li><a href="">ABOUT</a></li>
           <li><a href="">STORIES</a></li>
           <li><a href="">HELLO</a></li>
+          <li><img src="./media/header-menu-icon.png" alt="menu icon"></li>
         </ul>
       </nav>
     </div>
   </header>
   <section class="banner">
-    <div class="banner__container">
+    <div class="container">
       <div class="banner__promo">
         <h1>STORYTELLER</h1>
         <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
@@ -32,14 +34,14 @@
     </div>
   </section>
   <section class="intro">
-    <div class="intro__container">
+    <div class="container">
       <img src="./media/broccoli.png" alt="broccoli">
       <h2>Who & Why</h2>
       <p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the evening. But Gregor found it easy to give up having the door open, he had, after all, often failed to make use of it when it was open and, without the family having noticed it, lain in his room in its darkest corner. One time, though, the charwoman left the door.</p>
     </div>
   </section>
   <section class="services">
-    <div class="services__container">
+    <div class="container">
       <div class="services__block">
         <img src="./media/services-clock.png" alt="clock">
         <h3>An Wow Feature</h3>
@@ -58,63 +60,83 @@
     </div>
   </section>
   <section class="featured-articles">
-    <div class="featured-articles__container">
-      <h2>Featured Articles</h2>
-      <p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the</p>
-    </div>
-    <div class="featured-articles__slider">
-      <div class="featured-articles__slider-block">
-        <p>COMIC</p>
-        <h3>A million ways to die in the wild wild wild west</h3>
-        <figure>
-          <img src="./media/featured-articles-jimmy.jpg" alt="JIMMY JEFFERSON photo">
-          <figcaption>JIMMY JEFFERSON 21/08/2013</figcaption>
-        </figure>
+    <div class="container">
+      <div class="featured-articles__info">
+        <h2>Featured Articles</h2>
+        <p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the</p>
       </div>
-      <div class="featured-articles__slider-block">
-        <p>LIFESTYLE</p>
-        <h3>The most comfortable chair comes with no backpain</h3>
-        <figure>
-          <img src="./media/featured-article-gail.jpg" alt="GAIL GUTIERRE photo">
-          <figcaption>GAIL GUTIERREZ 1/08/2013</figcaption>
-        </figure>
-      </div>
-      <div class="featured-articles__slider-block">
-        <p>TRAVEL</p>
-        <h3>Journey to the center of the earth with jefferson </h3>
-        <figure>
-          <img src="./media/featured-article-mason.jpg" alt="MASON JOHNSTON photo">
-          <figcaption>MASON JOHNSTON 21/08/2013</figcaption>
-        </figure>
-      </div>
-      <div class="featured-articles__slider-block">
-        <p>TRAVEL</p>
-        <h3>Journey to the center of the earth with jefferson </h3>
-        <figure>
-          <img src="./media/featured-article-mason.jpg" alt="MASON JOHNSTON photo">
-          <figcaption>MASON JOHNSTON 21/08/2013</figcaption>
-        </figure>
-      </div>
-      <div class="featured-articles__slider-block">
-        <p>TRAVEL</p>
-        <h3>Journey to the center of the earth with jefferson </h3>
-        <figure>
-          <img src="./media/featured-article-mason.jpg" alt="MASON JOHNSTON photo">
-          <figcaption>MASON JOHNSTON 21/08/2013</figcaption>
-        </figure>
-      </div>
-      <div class="featured-articles__slider-block">
-        <p>TRAVEL</p>
-        <h3>Journey to the center of the earth with jefferson </h3>
-        <figure>
-          <img src="./media/featured-article-mason.jpg" alt="MASON JOHNSTON photo">
-          <figcaption>MASON JOHNSTON 21/08/2013</figcaption>
-        </figure>
+      <div class="featured-articles__slider">
+        <div class="featured-articles__slider-block">
+          <p>COMIC</p>
+          <h3>A million ways to die in the wild wild wild west</h3>
+          <figure>
+            <img src="./media/featured-articles-jimmy.jpg" alt="JIMMY JEFFERSON photo">
+            <figcaption>
+              <p>JIMMY JEFFERSON</p>
+              <p>21/08/2013</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="featured-articles__slider-block">
+          <p>LIFESTYLE</p>
+          <h3>The most comfortable chair comes with no backpain</h3>
+          <figure>
+            <img src="./media/featured-article-gail.jpg" alt="GAIL GUTIERRE photo">
+            <figcaption>
+              <p>GAIL GUTIERREZ</p>
+              <p>1/08/2013</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="featured-articles__slider-block">
+          <p>TRAVEL</p>
+          <h3>Journey to the center of the earth with jefferson </h3>
+          <figure>
+            <img src="./media/featured-article-mason.jpg" alt="MASON JOHNSTON photo">
+            <figcaption>
+              <p>MASON JOHNSTON</p>
+              <p>21/08/2013</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="featured-articles__slider-block">
+          <p>TRAVEL</p>
+          <h3>Journey to the center of the earth with jefferson </h3>
+          <figure>
+            <img src="./media/featured-article-mason.jpg" alt="MASON JOHNSTON photo">
+            <figcaption>
+              <p>MASON JOHNSTON</p>
+              <p>21/08/2013</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="featured-articles__slider-block">
+          <p>TRAVEL</p>
+          <h3>Journey to the center of the earth with jefferson </h3>
+          <figure>
+            <img src="./media/featured-article-mason.jpg" alt="MASON JOHNSTON photo">
+            <figcaption>
+              <p>MASON JOHNSTON</p>
+              <p>21/08/2013</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="featured-articles__slider-block">
+          <p>TRAVEL</p>
+          <h3>Journey to the center of the earth with jefferson </h3>
+          <figure>
+            <img src="./media/featured-article-mason.jpg" alt="MASON JOHNSTON photo">
+            <figcaption>
+              <p>MASON JOHNSTON</p>
+              <p>21/08/2013</p>
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </div>
   </section>
   <section class="clients">
-    <div class="clients__container">
+    <div class="container">
       <h2>Clients</h2>
       <div class="clients__slider">
         <div class="clients__slider-block">
@@ -156,6 +178,104 @@
       </div>
     </div>
   </section>
+  <section class="portfolio">
+    <div class="container">
+      <div class="portfolio__info">
+        <h2>Portfolio & Screenshots</h2>
+        <p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the</p>
+      </div>
+      <div class="portfolio__slider"></div>
+    </div>
+  </section>
+  <section class="quote">
+    <div class="container">
+      <img src="./media/quote-commas.png" alt="commas">
+      <p class="quote__text">Happiness cannot be traveled to, owned, earned, or worn. It is the spiritual experience of living every minute with love, grace & gratitude.</p>
+      <p class="quote__author">Denis Waitley</p>
+    </div>
+  </section>
+  <section class="team-members">
+    <div class="container">
+      <div class="team-members__info">
+        <h2>Team Members</h2>
+        <p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the</p>
+      </div>
+      <div class="team-members__person">
+        <figure>
+          <img src="./media/team-james.png" alt="James Philly">
+          <p class="team-members__person-name">JAMES PHILLY</p>
+          <p class="team-members__person-job">Lead Developer</p>
+        </figure>
+        <figure>
+          <img src="./media/team-cactus.png" alt="Cactus Jack">
+          <p class="team-members__person-name">CACTUS JACK</p>
+          <p class="team-members__person-job">3D Model Designer</p>
+        </figure>
+        <figure>
+          <img src="./media/team-jack.png" alt="Jack Sparrow">
+          <p class="team-members__person-name">JACK SPARROW</p>
+          <p class="team-members__person-job">Master of All Trade</p>
+        </figure>
+        <figure>
+          <img src="./media/team-yaga.png" alt="Yaga Squarehead">
+          <p class="team-members__person-name">YAGA SQUAREHEAD</p>
+          <p class="team-members__person-job">Manages Money</p>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <section class="facts">
+    <div class="container">
+      <h2>Facts & Numbers</h2>
+      <div class="facts__block">
+        <div class="facts__block-item">
+          <p class="facts__block-item-num">110</p>
+          <p class="facts__block-item-def">successful projects</p>
+        </div>
+        <div class="facts__block-item">
+          <p class="facts__block-item-num">25</p>
+          <p class="facts__block-item-def">awesome clients</p>
+        </div>
+        <div class="facts__block-item">
+          <p class="facts__block-item-num">30</p>
+          <p class="facts__block-item-def">open source plugins</p>
+        </div>
+        <div class="facts__block-item">
+          <p class="facts__block-item-num">13</p>
+          <p class="facts__block-item-def">open source themes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blog">
+    <div class="container">
+      <div class="blog__text">
+        <p class="blog__text-date">Travel / 21st March, 2014</p>
+        <h3>A New Product Is Coming </h3>
+        <p class="blog__text-prev">The office assistant was the boss's man, spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never.</p>
+      </div>
+      <div class="blog__image">
+        <img src="./media/blog-camera.jpg" alt="camera image">
+      </div>
+      <div class="blog__image">
+        <img src="./media/blog-controller.jpg" alt="controller image">
+      </div>
+      <div class="blog__text">
+        <p class="blog__text-date">Gadget / 3rd March, 2014</p>
+        <h3>Jimmy’s New Xbox Controller</h3>
+        <p class="blog__text-prev">The office assistant was the boss's man, spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never.</p>
+      </div>
+      <div class="blog__text">
+        <p class="blog__text-date">Travel / 21st March, 2014</p>
+        <h3>A New Product Is Coming </h3>
+        <p class="blog__text-prev">The office assistant was the boss's man, spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never.</p>
+      </div>
+      <div class="blog__image">
+        <img src="./media/blog-meal.jpg" alt="meal image">
+      </div>
+    </div>
+  </section>
+
   <script src="./js/jquery-3.4.1.min.js"></script>
   <script src="./slick/slick.js"></script>
   <script src="./js/scripts.js"></script>
