@@ -10,11 +10,11 @@
     <link rel="shortcut icon" type="image/png" href="./media/favicon.png"/>
 </head>
 <body>
-  <header class="main__header">
+  <header class="main-header">
     <div class="container">
-      <a class="main__header-logo" href="#home">UNICORN</a>
-      <nav class="main__header-nav">
-        <ul class="main__header-nav-list">
+      <a class="main-header__logo" href="#home">UNICORN</a>
+      <nav class="main-header__nav">
+        <ul class="main-header__nav-list">
           <li><a href="">HOME</a></li>
           <li><a href="">ABOUT</a></li>
           <li><a href="">STORIES</a></li>
@@ -278,10 +278,10 @@
   </section>
   <section class="tweets">
     <div class="container">
-      <img class="tweets__icon" src="./media/twitter-icon.png" alt="twitter icon">
+      <a class="tweets__icon" href="https://twitter.com/explore" target="_blank"></a>
       <img class="tweets__photo" src="./media/featured-article-gail.jpg" alt="Gail Gutierrez photo">
       <p class="tweets__text">Happiness cannot be traveled to, owned, earned, or worn. It is the spiritual experience of living every minute with love, grace & gratitude.</p>
-      <p class="tweets__link">@loveless</p>
+      <a class="tweets__link" href="https://twitter.com/explore" target="_blank">@loveless</a>
     </div>
   </section>
   <section class="feedback">
@@ -322,20 +322,35 @@
         <div class="feedback__contact-social">
           <h3>SOCIAL</h3>
           <ul>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Twitter</a></li>
-            <li><a href="">Github</a></li>
-            <li><a href="">Pinterest</a></li>
-            <li><a href="">Google Plus</a></li>
-            <li><a href="">Dribbble</a></li>
-            <li><a href="">Flickr</a></li>
-            <li><a href="">Others</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+            <li><a href="https://github.com/" target="_blank">Github</a></li>
+            <li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></li>
+            <li><a href="https://aboutme.google.com/" target="_blank">Google Plus</a></li>
+            <li><a href="https://dribbble.com/" target="_blank">Dribbble</a></li>
+            <li><a href="https://www.flickr.com/" target="_blank">Flickr</a></li>
+            <li><a href="" target="_blank">Others</a></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
-  <footer class="main-footer"></footer>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="main-footer__copyright">
+        <p>One morning, when Gregor Samsa woke from troubled dreams, he found</p>
+        <p>&#169 2015 Your Awesome Company</p>
+      </div>  
+      <nav class="main-footer__additional-links">
+        <ul>
+          <li><a href="">TERMS</a></li>
+          <li><a href="">PRIVACY POLICY</a></li>
+          <li><a href="">CONTACT</a></li>
+          <li><a href="">JOB</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
   <script src="./js/jquery-3.4.1.min.js"></script>
   <script src="./slick/slick.js"></script>
   <script src="./js/scripts.js"></script>

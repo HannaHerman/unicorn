@@ -322,12 +322,12 @@ template {
   src: url("../fonts/SourceSansPro-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-SemiBold.woff") format("woff"), url("../fonts/SourceSansPro-SemiBold.ttf") format("truetype");
   font-weight: 600; }
 
-.main__header-logo, .main__header-nav-list li a, .banner__promo h1, .intro .container h2, .featured-articles__info h2, .clients .container h2, .portfolio__info h2, .team-members__info h2, .team-members__person-name, .facts .container h2, .facts__block-item-num, .tweets__link, .feedback__form h2 {
+.main-header__logo, .main-header__nav-list li a, .banner__promo h1, .intro .container h2, .featured-articles__info h2, .clients .container h2, .portfolio__info h2, .team-members__info h2, .team-members__person-name, .facts .container h2, .facts__block-item-num, .tweets__link, .feedback__form h2 {
   font-family: "Sans Pro";
   font-weight: bold;
   color: #212121; }
 
-.banner__promo p, .intro .container p, .services__block p, .featured-articles__info p, .featured-articles__slider-block p, .featured-articles__slider-block h3, .portfolio__info p, .quote .container, .team-members__info p, .team-members__person-job, .facts__block-item-def, .blog__text p, .tweets__text, .feedback__form p, .feedback__form-block textarea, input, .feedback__contact a {
+.banner__promo p, .intro .container p, .services__block p, .featured-articles__info p, .featured-articles__slider-block p, .featured-articles__slider-block h3, .portfolio__info p, .quote .container, .team-members__info p, .team-members__person-job, .facts__block-item-def, .blog__text p, .tweets__text, .feedback__form p, .feedback__form-block textarea, input, .feedback__contact a, .main-footer__copyright p, .main-footer__additional-links a {
   font-family: "Sans Pro";
   font-weight: normal;
   color: #212121; }
@@ -370,39 +370,39 @@ input, textarea {
   border-bottom: 1px solid #999;
   outline-color: #e5ece9; }
 
-.main__header {
+.main-header {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 70px; }
 
-.main__header .container {
+.main-header .container {
   justify-content: space-between;
   align-items: flex-end; }
 
-.main__header-logo {
+.main-header__logo {
   font-size: 17px;
   margin-left: 2px;
   text-decoration: none; }
 
-.main__header-logo:hover {
+.main-header__logo:hover {
   color: #312f2f;
   text-shadow: 2px 2px 2px rgba(121, 120, 111, 0.49); }
 
-.main__header-nav-list {
+.main-header__nav-list {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   margin-bottom: 0; }
 
-.main__header-nav-list li {
+.main-header__nav-list li {
   margin-left: 23px; }
 
-.main__header-nav-list li a {
+.main-header__nav-list li a {
   font-size: 16px; }
 
-.main__header-nav-list li a:hover {
+.main-header__nav-list li a:hover {
   color: #312f2f;
   text-shadow: 2px 2px 2px rgba(121, 120, 111, 0.49); }
 
@@ -821,11 +821,21 @@ input, textarea {
   text-align: center; }
 
 .tweets__icon {
-  margin-top: 7%; }
+  margin-top: 7%;
+  position: relative; }
+
+.tweets__icon:after {
+  content: " ";
+  height: 30px;
+  width: 30px;
+  background-image: url(../media/twitter-icon.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -15px; }
 
 .tweets__photo {
   border-radius: 50%;
-  margin-top: 4%; }
+  margin-top: 7%; }
 
 .tweets__text {
   font-size: 20px;
@@ -880,8 +890,7 @@ input, textarea {
   grid-template-rows: repeat(5, 1fr); }
 
 .feedback__form-block textarea, input {
-  color: #999;
-  overflow: auto; }
+  color: #999; }
 
 .feedback__form-block textarea :focus, input :focus {
   outline-color: #e5ece9; }
@@ -949,10 +958,52 @@ input, textarea {
   grid-column: 3/4;
   grid-row: 3/10; }
 
+.feedback__contact-friends ul {
+  margin-left: 19px; }
+
 .feedback__contact-social {
   grid-column: 5/6;
   grid-row: 3/10; }
 
+.feedback__contact-social ul {
+  margin-left: 24px; }
+
 .main-footer {
-  background-color: #212121;
+  background-color: #212121; }
+
+.main-footer .container {
+  justify-content: space-between;
+  align-items: center;
   min-height: 110px; }
+
+.main-footer__copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 23px; }
+
+.main-footer__copyright p {
+  color: #808080;
+  margin: 0;
+  font-size: 14px;
+  margin-top: 10px; }
+
+.main-footer__additional-links {
+  display: flex;
+  justify-content: flex-end; }
+
+.main-footer__additional-links ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; }
+
+.main-footer__additional-links ul li {
+  margin-left: 30px; }
+
+.main-footer__additional-links a {
+  color: #808080;
+  font-size: 13px; }
+
+.main-footer__additional-links a:hover {
+  color: #ebe5e5;
+  text-shadow: 2px 2px 2px rgba(121, 120, 111, 0.49); }
