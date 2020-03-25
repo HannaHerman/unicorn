@@ -49,3 +49,8 @@ $('.js-filter').on('click', function(){
     filtered = false;
   }
 });
+$('.blog__slider .container').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  adaptiveHeight: true
+});
