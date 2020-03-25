@@ -117,6 +117,8 @@ a {
   align-self: flex-end;
   justify-content: center;
   flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .banner__promo {
   display: flex;
@@ -127,7 +129,6 @@ a {
   h1 {
     @extend %bold-font;
     font-size: 73px;
-    letter-spacing: 1px;
     position: relative;
     margin-bottom: 45px;
     &:after {
@@ -171,8 +172,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 98px;
+  padding: 100px 10px 98px;
   h2 {
     @extend %bold-font;
     font-size: 27px;
@@ -192,8 +192,7 @@ a {
 // services
 .services {
   background-color: #efefef;
-  padding-top: 80px;
-  padding-bottom: 93px;
+  padding: 80px 10px 93px;
 }
 .services .container {
   justify-content: space-between;
@@ -383,8 +382,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding-top: 52px;
-  padding-bottom: 47px;
+  padding: 52px 10px 47px;
   @extend %regular-font;
   font-size: 20px;
   text-align: center;
@@ -444,11 +442,13 @@ a {
 .team-members__person-name {
   @extend %bold-font;
   font-size: 16px;
+  text-align: center;
   margin-top: 49px;
 }
 .team-members__person-job {
   @extend %regular-font;
   font-size: 15px;
+  text-align: center;
 }
 
 // facts
@@ -557,6 +557,7 @@ a {
   p {
     @extend %regular-font;
     text-align: center;
+    word-spacing: 1px;
   }
   h3 {
     @extend %semibold-font;
@@ -586,14 +587,13 @@ a {
   background-color: #efefef;
 }
 .blog__slider .container {
-  min-height: 220px;
   max-width: 1320px;
-  
+  padding-top: 75px;
+  padding-bottom: 60px;
 }
 .blog__slider-block {
   position: relative;
-  margin-left: 21%;
-  margin-top: 15%;
+  margin-left: 116px;
   h3 {
     @extend %semibold-font;
     font-size: 18px;
@@ -616,42 +616,43 @@ a {
 // tweets
 .tweets .container {
   max-width: 830px;
-  min-height: 461px;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 75px 10px 95px;
   p {
     text-align: center;
   }
 }
 .tweets__icon {
-  margin-top: 7%;
-  position: relative;
-  &:after {
-    content: " ";
-    height: 30px;
-    width: 30px;
-    background-image: url(../media/twitter-icon.png);
-    background-repeat: no-repeat;
-    position: absolute;
-    right: -15px;
+  height: 30px;
+  width: 30px;
+  background-image: url(../media/twitter-icon.png);
+  background-repeat: no-repeat;
+  transition: .6s;
+  &:hover {
+    transform: scale(1.2);
   }
 }
 .tweets__photo {
   border-radius: 50%;
-  margin-top: 7%;
+  margin-top: 51px;
 }
 .tweets__text {
   @extend %regular-font;
   font-size: 20px;
-  margin: 0;
+  margin-bottom: 0;
+  margin-top: 27px;
   line-height: 2;
+  word-spacing: -1px;
 }
 .tweets__link {
   @extend %bold-font;
   font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 10%;
+  margin-top: 25px;
+  &:hover {
+    text-shadow: 2px 2px 2px rgba(121,120,111,0.49);
+  }
 }
 
 // feedback
@@ -700,6 +701,7 @@ background-color: #212121;
   box-sizing: border-box;
   cursor: text;
   outline-color: rgb(229, 236, 233);
+  padding-bottom: 6px;
 }
 .feedback__form-block-mail {
   width: 46%;
@@ -787,7 +789,7 @@ background-color: #212121;
 }
 .feedback__contact-social {
   margin-left: 4px;
-  margin-right: 33px;
+  margin-right: 22px;
   h3 {
     margin-left: 24px;
   }
