@@ -74,6 +74,8 @@ a {
 .main-header .container {
   justify-content: space-between;
   align-items: flex-end;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .main-header__logo {
   @extend %bold-font;
@@ -106,7 +108,7 @@ a {
 // banner
 .banner {
   display: flex;
-  height: 930px;
+  height: 100vh;
   margin: 0;
   background-image: url(../media/banner_bg.jpg);
   background-position: center;
@@ -115,17 +117,16 @@ a {
 .banner .container {
   flex-direction: column;
   align-self: flex-end;
-  justify-content: center;
+  justify-content: flex-end;
   flex: 1;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 18.1vh;
 }
 .banner__promo {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 13%;
-  margin-right: 5px;
   h1 {
     @extend %bold-font;
     font-size: 73px;
@@ -303,6 +304,9 @@ a {
     }
   }
 }
+.featured-articles .slick-disabled {
+  display: none;
+}
 .slick-next {
   right: -10px;
   top: 40%;
@@ -469,19 +473,8 @@ a {
     color: #eee;
     text-align: center;
     letter-spacing: 2px;
-    margin: 0;
-  }
-  p {
-    color: #eee;
-    text-align: center;
-    letter-spacing: 2px;
-    margin-top: 0;
-    &:first-of-type {
-    margin-bottom: 15px;
-    }
-    &:last-of-type {
-      margin-top: 15px;
-    }
+    margin-bottom: 0;
+    margin-top: 7px;
   }
 }
 .facts__block {
@@ -490,10 +483,10 @@ a {
   justify-content: space-between;
   background-color: rgba(146, 146, 146, .34);
   position: relative;
-  padding: 55px 97px 42px 100px;
+  padding: 55px 94px 70px 100px;;
   max-width: 830px;
   box-sizing: border-box;
-  margin-top: 65px;
+  margin-top: 66px;
   &:after {
     content: "";
     position: absolute;
@@ -504,43 +497,63 @@ a {
     background-color: #e64a19;
   }
 }
-.facts__block-item {
+.facts__block-proj, .facts__block-clients, .facts__block-plug, .facts__block-themes {
   position: relative;
   display: flex;
   flex-direction: column;
-  span {
-    background-color: #4d4c4b;
+  p {
+    text-align: center;
+    letter-spacing: 2px;
+    &:first-of-type {
+      margin-top: 0;
+      margin-bottom: 15px;
+      @extend %bold-font;
+      color: #eee;
+      font-size: 26px;
+    }
+    &:last-of-type {
+      margin-top: 16px;
+      margin-bottom: 0;
+      @extend %regular-font;
+      color: #eee;
+      font-size: 24px;
+    }
+  }
+  &:after {
+    content: "";
+    position: absolute;
     width: 76px;
     height: 4px;
-    align-self: center;
-  }
-  // &:after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 152%;
-  //   right: 34%;
-  //   width: 76px;
-  //   height: 4px;
-  //   background-color: #4d4c4b;
-  // }
-  &:first-of-type {
-    margin: 0 0 25px 0;
-  }
-  &:last-of-type {
-    margin: 0 0 0 155px;
-  }
-  &:nth-of-type(2) {
-    margin-right: 19px;
+    background-color: #4d4c4b;
+  }  
+}
+.facts__block-proj {
+  margin-right: 185px;
+  margin-bottom: 52px;
+  &:after {
+    top: 51%;
+    right: 32%;
   }
 }
-.facts__block-item-num {
-  position: relative;
-  @extend %bold-font;
-  font-size: 26px;
+.facts__block-clients {
+  margin-right: 21px;
+  &:after {
+    top: 31%;
+    right: 31%;
+  }
 }
-.facts__block-item-def {
-  @extend %regular-font;
-  font-size: 24px;
+.facts__block-plug {
+  &:after {
+    top: 50%;
+    right: 36%;
+  }  
+}
+.facts__block-themes {
+  margin-left: 137px;
+  &:after {
+    top: 50%;
+    right: 34%;
+  }   
 }
 
 // blog
