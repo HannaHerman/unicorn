@@ -358,7 +358,8 @@ a {
 .slick-initialized .slick-slide {
   width: 160px;
 }
-.clients__slick-prev button {
+.clients__slick-prev {
+  button {
   position: absolute;
   background-color: transparent;
   background-image: url(../media/angle-left-solid.png);
@@ -370,8 +371,10 @@ a {
   border-color: transparent;
   cursor: pointer;
   outline: none;
+  }
 }
-.clients__slick-next button {
+.clients__slick-next {
+  button {
   position: absolute;
   background-color: transparent;
   background-image: url(../media/angle-right-solid.png);
@@ -383,13 +386,17 @@ a {
   border-color: transparent;
   cursor: pointer;
   outline: none;
+  }
 }
 
 // portfolio
 .portfolio .container {
-  min-height: 915px;
+  width: 100vw;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 106px;
+  padding-bottom: 120px;
 }
 .portfolio__info {
   display: flex;
@@ -400,21 +407,82 @@ a {
     @extend %bold-font;
     font-size: 27px;
     text-align: center;
+    margin-top: 0;
+    letter-spacing: 2px;
+    
+    
   }
   p {
     @extend %regular-font;
     font-size: 16px;
     max-width: 770px;
     text-align: center;
+    line-height: 2;
+    margin-top: 11px;
   }
   &:after {
     content: "";
     position: absolute;
-    top: 86px;
+    top: 122%;
     width: 75px;
     height: 7px;
     background-color: #e64a19;
   }
+}
+.portfolio__filter {
+  display: flex;
+  margin-top: 86px;
+  button {
+    @extend %regular-font;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin-left: 0px;
+    margin-right: 31px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &:hover {
+      text-shadow: 2px 2px 2px rgba(121,120,111,0.49);
+    }
+  }
+}
+.portfolio__slider {
+  width: 100vw;
+  margin-top: 46px;
+}
+.portfolio__slider-item {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  filter: grayscale(100%);
+  max-height: 360px;
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+}
+.portfolio .slick-dots {
+  bottom: -21%;
+}
+.slick-center .portfolio__slider-item {
+  filter: grayscale(0%);
+}
+.portfolio .slick-dots li button:before {
+  font-size: 13px;
+}
+.portfolio .slick-dots .slick-active button:before {
+  opacity: .9;
+  color: #e64a19;
 }
 
 // quote
@@ -922,7 +990,7 @@ background-color: #212121;
     font-size: 13px;
     &:hover {
       color: #ebe5e5;
-      text-shadow: 2px 2px 2px rgba(121,120,111,0.49);
+      text-shadow: 1px 1px 1px rgba(121,120,111,0.49);
     }
   }
 }

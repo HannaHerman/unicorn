@@ -80,47 +80,60 @@ $('.featured-articles__slider').slick({
   }
   });
   
+// portfolio
 
-$('.filtering').slick({
-  centerMode: true,
-  centerPadding: '60px',
+$('.portfolio__slider').slick({
   slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
+  slidesToScroll: 1,
+  dots: true,
+  arrows: false,
+  infinite: true,
+  centerMode: true
+  });
 
 var filtered = false;
 
-$('.js-filter').on('click', function(){
-  if (filtered === false) {
-    $('.filtering').slick('slickFilter',':even');
-    $(this).text('Unfilter Slides');
-    filtered = true;
-  } else {
-    $('.filtering').slick('slickUnfilter');
-    $(this).text('Filter Slides');
-    filtered = false;
-  }
+$('.view-art').on('click', function() {
+  $('.portfolio__slider').slick('slickFilter',$('.art').parent().parent());
+  $('.active').removeClass('active');
+  $('.view-art').addClass('active');
+  filtered = true;
 });
 
+$('.view-mystery').on('click', function() {
+  $('.portfolio__slider').slick('slickFilter',$('.mystery').parent().parent());
+  $('.active').removeClass('active');
+  $('.view-mystery').addClass('active');
+  $('.view-art').addClass('inactive');
+  $('.view-illusion').addClass('inactive');
+  $('.view-travel').addClass('inactive');
+  $('.view-paintings').addClass('inactive');
+  filtered = true;
+});
+
+$('.view-illusion').on('click', function() {
+  $('.portfolio__slider').slick('slickFilter',$('.illusion').parent().parent());
+  $('.active').removeClass('active');
+  $('.view-illusion').addClass('active');
+  filtered = true;
+});
+$('.view-travel').on('click', function() {
+  $('.portfolio__slider').slick('slickFilter',$('.travel').parent().parent());
+  $('.active').removeClass('active');
+  $('.view-travel').addClass('active');
+  filtered = true;
+});
+$('.view-paintings').on('click', function() {
+  $('.portfolio__slider').slick('slickFilter',$('.paintings').parent().parent());
+  $('.active').removeClass('active');
+  $('.view-paintings').addClass('active');
+  filtered = true;
+});
+
+
+  
+
+ 
 // blog
 $('.blog-articles__slider').slick({
   slidesToShow: 3,
