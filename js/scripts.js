@@ -84,6 +84,7 @@ $('.clients__slider').slick({
       breakpoint: 520,
       settings: {
         slidesToShow: 2,
+        dots: true,
       }
     }
   ]
