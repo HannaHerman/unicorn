@@ -458,7 +458,6 @@ a {
   background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(87, 87, 87, 0.15)), to(rgba(87, 87, 87, 0.45)));
   background-image: linear-gradient(to top left, rgba(87, 87, 87, 0.15), rgba(87, 87, 87, 0.45));
   margin-top: 15px;
-  border-radius: 3%;
   padding: 25px; }
 
 .main-footer {

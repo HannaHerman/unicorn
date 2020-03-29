@@ -1285,7 +1285,7 @@ input {
   .facts__block {
     max-width: 680px;
     margin-top: 45px;
-    padding: 35px 74px 50px 80px;
+    padding: 55px 47px 70px 47px;
   }
   .facts__block-proj {
     margin-right: 82px;
@@ -1836,6 +1836,7 @@ input {
     }
   }
   .team-members__person {
+    flex-direction: column;
     figure {
       margin-top: 0;
       margin-bottom: 0;
@@ -1981,7 +1982,7 @@ input {
     }
   }
 }
-@media all and (max-width: 900px) and (orientation: landscape) {
+@media all and (max-width: 850px) and (orientation: landscape) {
   .banner .container {
     padding-bottom: 2.1vh;
   }
@@ -1993,5 +1994,14 @@ input {
     p {
       font-size: 15px;
     }
+    a {
+      margin-top: 5px;
+    }
+  }
+  .facts__block {
+    padding: 55px 81px 70px 87px;
+  }
+  .blog-articles__slick-next button {
+    right: -4%;
   }
 }

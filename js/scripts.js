@@ -72,6 +72,13 @@ $('.clients__slider').slick({
   nextArrow: '.clients__slick-next',
   responsive: [
     {
+      breakpoint: 850,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+      }
+    },
+    {
       breakpoint: 740,
       settings: {
         slidesToShow: 3,

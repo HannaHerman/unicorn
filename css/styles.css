@@ -1439,7 +1439,7 @@ input {
   .facts__block {
     max-width: 680px;
     margin-top: 45px;
-    padding: 35px 74px 50px 80px; }
+    padding: 55px 47px 70px 47px; }
   .facts__block-proj {
     margin-right: 82px;
     margin-bottom: 52px; }
@@ -1802,6 +1802,8 @@ input {
   .team-members__info p {
     font-size: 14px;
     margin-top: 15px; }
+  .team-members__person {
+    flex-direction: column; }
   .team-members__person figure {
     margin-top: 0;
     margin-bottom: 0;
@@ -1902,11 +1904,17 @@ input {
   .main-footer__additional-links ul li:first-of-type {
     margin-left: 0; } }
 
-@media all and (max-width: 900px) and (orientation: landscape) {
+@media all and (max-width: 850px) and (orientation: landscape) {
   .banner .container {
     padding-bottom: 2.1vh; }
   .banner__promo h1 {
     font-size: 51px;
     margin-bottom: 12px; }
   .banner__promo p {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .banner__promo a {
+    margin-top: 5px; }
+  .facts__block {
+    padding: 55px 81px 70px 87px; }
+  .blog-articles__slick-next button {
+    right: -4%; } }
