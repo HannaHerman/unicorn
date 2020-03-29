@@ -13,27 +13,30 @@
   <header class="main-header">
     <div class="container">
       <a class="main-header__logo" href="#home">UNICORN</a>
+      <div class="main-header__burger">
+        <span></span>
+      </div>
       <nav class="main-header__nav">
         <ul class="main-header__nav-list">
-          <li><a href="">HOME</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">STORIES</a></li>
-          <li><a href="">HELLO</a></li>
+          <li><a class="main-header__nav-link" href="#home">HOME</a></li>
+          <li><a class="main-header__nav-link" href="#about">ABOUT</a></li>
+          <li><a class="main-header__nav-link" href="#stories">STORIES</a></li>
+          <li><a class="main-header__nav-link" href="#hello">HELLO</a></li>
           <li><img src="./media/header-menu-icon.png" alt="menu icon"></li>
         </ul>
       </nav>
     </div>
   </header>
-  <section class="banner">
+  <section class="banner" id="home">
     <div class="container">
       <div class="banner__promo">
         <h1>STORYTELLER</h1>
         <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
-        <a href="">read the rest</a>
+        <a href="read-rest.html#rest">read the rest</a>
       </div>
     </div>
   </section>
-  <section class="intro">
+  <section class="intro" id="about">
     <div class="container">
       <img src="./media/broccoli.png" alt="broccoli">
       <h2>Who & Why</h2>
@@ -164,9 +167,6 @@
           <img src="./media/clients-hipster-quality.png" alt="client logo">
         </div>
         <div class="clients__slider-block">
-          <img src="./media/clients-cool-music.png" alt="client logo">
-        </div>
-        <div class="clients__slider-block">
           <img src="./media/clients-hipster-design.png" alt="client logo">
         </div>
         <div class="clients__slider-block">
@@ -189,6 +189,7 @@
         <p>The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the</p>
       </div>
       <div class="portfolio__filter">
+        <button class="portfolio__filter-attr view-all">All</button>
         <button class="portfolio__filter-attr view-art">Art</button>
         <button class="portfolio__filter-attr view-mystery">Mystery</button>
         <button class="portfolio__filter-attr view-illusion">Illusion</button>
@@ -196,67 +197,68 @@
         <button class="portfolio__filter-attr view-paintings">Paintings</button>
       </div>
       <div class="portfolio__slider">
-        <div class="portfolio__slider-item paintings">
+        <div class="portfolio__slider-item paintings all">
           <img src="./media/portfolio-road.jpg" alt="road image">
         </div>
-        <div class="portfolio__slider-item illusion">
+        <div class="portfolio__slider-item illusion all">
           <img src="./media/portfolio-jewerly.jpg" alt="jewerly image">
         </div>
-        <div class="portfolio__slider-item paintings">
+        <div class="portfolio__slider-item paintings all">
           <img src="./media/portfolio-notebook.jpg" alt="notebook image">
         </div>
-        <div class="portfolio__slider-item paintings">
+        <div class="portfolio__slider-item paintings all">
           <img src="./media/portfolio-glasses.jpg" alt="glasses image">
         </div>
-        <div class="portfolio__slider-item mystery">
+        <div class="portfolio__slider-item mystery all">
           <img src="./media/porfolio-autumn-tree.jpg" alt="autumn tree image">
         </div>
-        <div class="portfolio__slider-item art">
+        <div class="portfolio__slider-item art all">
           <img src="./media/portfolio-cookies.jpg" alt="cookies image">
         </div>
-        <div class="portfolio__slider-item art">
+        <div class="portfolio__slider-item art all">
           <img src="./media/portfolio-girl.jpg" alt="girl image">
         </div>
-        <div class="portfolio__slider-item travel">
+        <div class="portfolio__slider-item travel all">
           <img src="./media/portfolio-mountain.jpg" alt="mountain image">
         </div>
-        <div class="portfolio__slider-item travel">
+        <div class="portfolio__slider-item travel all">
           <img src="./media/portfolio-night-traffic.jpg" alt="night traffic image">
         </div>
-        <div class="portfolio__slider-item travel">
+        <div class="portfolio__slider-item travel all">
           <img src="./media/portfolio-runner.jpg" alt="runner image">
         </div>
-        <div class="portfolio__slider-item mystery">
+        <div class="portfolio__slider-item mystery all">
           <img src="./media/portfolio-tree-hill.jpg" alt="tree hill image">
         </div>
-        <div class="portfolio__slider-item illusion">
+        <div class="portfolio__slider-item illusion all">
           <img src="./media/portfolio-textile.jpg" alt="textile image">
         </div>
-        <div class="portfolio__slider-item art">
+        <div class="portfolio__slider-item art all">
           <img src="./media/portfolio-double-exposure.jpg" alt="double exposure image">
         </div>
-        <div class="portfolio__slider-item mystery">
+        <div class="portfolio__slider-item mystery all">
         <img src="./media/portfolio-thunder.jpg" alt="thunder image">
         </div>
-        <div class="portfolio__slider-item illusion">
+        <div class="portfolio__slider-item illusion all">
           <img src="./media/portfolio-nature.jpg" alt="nature image">
         </div>
-        <div class="portfolio__slider-item travel">
+        <div class="portfolio__slider-item travel all">
           <img src="./media/portfolio-norway.jpg" alt="norway image">
         </div>
-        <div class="portfolio__slider-item paintings">
+        <div class="portfolio__slider-item paintings all">
           <img src="./media/portfolio-floral.jpg" alt="floral image">
         </div>
-        <div class="portfolio__slider-item illusion">
+        <div class="portfolio__slider-item illusion all">
           <img src="./media/portfolio-sunset.jpg" alt="sunset image">
         </div>
-        <div class="portfolio__slider-item art">
+        <div class="portfolio__slider-item art all">
           <img src="./media/portfolio-seal.jpg" alt="seal image">
         </div>
-        <div class="portfolio__slider-item mystery">
+        <div class="portfolio__slider-item mystery all">
           <img src="./media/portfolio-path.jpg" alt="path image">
         </div>
       </div>
+      <a class="portfolio__btn" href="view-all.html#photos">view all</a>
     </div>
   </section>
   <section class="quote">
@@ -284,19 +286,19 @@
           <p class="team-members__person-job">3D Model Designer</p>
         </figure>
         <figure>
-          <img src="./media/team-jack.png" alt="Jack Sparrow">
-          <p class="team-members__person-name">JACK SPARROW</p>
-          <p class="team-members__person-job">Master of All Trade</p>
+            <img src="./media/team-jack.png" alt="Jack Sparrow">
+            <p class="team-members__person-name">JACK SPARROW</p>
+            <p class="team-members__person-job">Master of All Trade</p>
         </figure>
         <figure>
-          <img src="./media/team-yaga.png" alt="Yaga Squarehead">
-          <p class="team-members__person-name">YAGA SQUAREHEAD</p>
-          <p class="team-members__person-job">Manages Money</p>
-        </figure>
+            <img src="./media/team-yaga.png" alt="Yaga Squarehead">
+            <p class="team-members__person-name">YAGA SQUAREHEAD</p>
+            <p class="team-members__person-job">Manages Money</p>
+          </figure>
       </div>
     </div>
   </section>
-  <section class="facts">
+  <section class="facts" id="services">
     <div class="container">
       <h2>Facts & Numbers</h2>
       <div class="facts__block">
@@ -319,30 +321,30 @@
       </div>
     </div>
   </section>
-  <section class="blog">
+  <section class="blog" id="stories">
     <div class="container">
-      <div class="blog__text">
+      <div class="blog__text travel">
         <p class="blog__text-date">Travel / 21st March, 2014</p>
         <h3>A New Product Is Coming </h3>
         <p class="blog__text-prev">The office assistant was the boss's man, spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never.</p>
       </div>
-      <div class="blog__image">
+      <div class="blog__image camera">
         <img src="./media/blog-camera.jpg" alt="camera image">
       </div>
-      <div class="blog__image">
+      <div class="blog__image controller">
         <img src="./media/blog-controller.jpg" alt="controller image">
       </div>
-      <div class="blog__text">
+      <div class="blog__text gadget">
         <p class="blog__text-date">Gadget / 3rd March, 2014</p>
         <h3>Jimmy’s New Xbox Controller</h3>
         <p class="blog__text-prev">The office assistant was the boss's man, spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never.</p>
       </div>
-      <div class="blog__text">
+      <div class="blog__text trip">
         <p class="blog__text-date">Travel / 21st March, 2014</p>
         <h3>A New Product Is Coming </h3>
         <p class="blog__text-prev">The office assistant was the boss's man, spineless, and with no understanding. What about if he reported sick? But that would be extremely strained and suspicious as in fifteen years of service Gregor had never.</p>
       </div>
-      <div class="blog__image">
+      <div class="blog__image meal">
         <img src="./media/blog-meal.jpg" alt="meal image">
       </div>
     </div>
@@ -387,7 +389,7 @@
       <a class="tweets__link" href="https://twitter.com/explore" target="_blank">@loveless</a>
     </div>
   </section>
-  <section class="feedback">
+  <section class="feedback" id="hello">
     <div class="container">
       <div class="feedback__form">
         <h2>UNICORN</h2>
@@ -403,9 +405,9 @@
         <div class="feedback__contact-links">
           <h3>LINKS</h3>
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="">Menu</a></li>
             <li><a href="">Restaurants</a></li>
             <li><a href="">Work Hours</a></li>
@@ -415,9 +417,9 @@
         <div class="feedback__contact-friends">
           <h3>FRIENDS</h3>
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="">Menu</a></li>
             <li><a href="">Restaurants</a></li>
           </ul>
